@@ -96,7 +96,11 @@ public class CryptoUI {
 		// Create the tab page
 		RsaUi rsatab = new RsaUi();
 		tabbedPane.addTab( "RSA", rsatab.panel );
+		Elgui elgtab = new Elgui();
+		tabbedPane.addTab( "Elgamal", elgtab.panel1 );
 		topPanel.add( tabbedPane );
+		
+		
 		
 		
 		

@@ -1,3 +1,4 @@
+package rsa;
 import java.awt.Color;
 import java.awt.HeadlessException;
 import java.awt.SystemColor;
@@ -259,7 +260,7 @@ public class RsaUi {
 							stringBuilder.append(bytestring);
 						}
 						String finalString = stringBuilder.toString();
-						//System.out.println(finalString);
+						System.out.println(finalString);
 						double strlen = finalString.length();
 						output.println(strlen);
 						int blockNumber = (int) (strlen /bsize);
@@ -308,7 +309,7 @@ public class RsaUi {
 					StringBuilder strb = new StringBuilder();
 					if (file.createNewFile()){
 					    int endstr = (int) (ciphersize % (rsa.getPrivateKey()[0].bitLength())/2) ;
-					    //System.out.println("end " + endstr);
+					    System.out.println("end " + endstr);
 					    for(int i =0 ; i < lenght; i++){
 					    	String planstring = rsa.decript(ls.get(i));
 							int m = Integer.parseInt(planstring);
